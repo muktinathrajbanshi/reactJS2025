@@ -3,6 +3,20 @@ import React from "react";
 const App = () => {
   return (
     <div>
+
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    <NetflixSeries />
+    </div>
+  );
+};
+
+
+const NetflixSeries = () => {
+  return (
+    <div>
       <div>
         <img src="tare_zameen_par.jpg" alt="web img" width="40%" height="40%" />
       </div>
@@ -14,5 +28,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
