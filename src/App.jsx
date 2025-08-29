@@ -1,15 +1,14 @@
-import React from "react";
+// import { Fragment } from "react";
 
 const App = () => {
   return (
-    <div>
-
+    <>
     <NetflixSeries />
     <NetflixSeries />
     <NetflixSeries />
     <NetflixSeries />
     <NetflixSeries />
-    </div>
+    </>
   );
 };
 
