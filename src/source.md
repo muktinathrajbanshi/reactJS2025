@@ -5,3 +5,25 @@ However, "0" and empty strings (`""`) are exceptions:
 "0" is rendered in the DOM because it is considered a valid React node. This means that if "0" is the result of an expression, it will appear in your UI.
 
 Empty strings (`""`) are also considered valid outputs and are rendered as well.
+
+1. Variables
+   // You can embed any JavaScript variable within JSX by enclosing it in curly braces. The value of the variable will be inserted into the DOM at the respective location.
+
+2. Expressions
+   // JSX allows you to write JavaScript expressions inside curly braces. This includes operations, function calls, and other JavaScript expressions that produce a value.
+
+3. Function Calls
+   // Functions, especially those that return JSX, can be invoked directly within your JSN.
+
+##ImportExport
+
+Default Export: A file can have only one default export.
+Default Import: When importing a default export, you can name the import whatever you like.
+
+Named Export:
+A file can have multiple named exports.
+Each named export must be explicitly exported.
+
+Named Import:
+When importing name exports, the import names must watch the exports names exactly.
+Named imports must be enclosed in curly braces.
