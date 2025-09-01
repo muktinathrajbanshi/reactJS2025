@@ -2,7 +2,7 @@
   {
     "name": "Lovely Runner",
     "id": "lovely-runner",
-    "img_url": "https://example.com/lovely-runner.jpg",
+    "img_url": "lovely_runner.jpg",
     "rating": 9.8,
     "description": "This movie is awesome",
     "cast": ["Kim Hye Yoon", "Byeon Woo Seok"],
@@ -12,7 +12,7 @@
   {
     "name": "Crash Landing on You",
     "id": "crash-landing-on-you",
-    "img_url": "https://example.com/crash-landing.jpg",
+    "img_url": "crash_landing_on_you.jpg",
     "rating": 9.7,
     "description": "A South Korean heiress accidentally lands in North Korea and meets a soldier.",
     "cast": ["Hyun Bin", "Son Ye Jin"],
@@ -22,7 +22,7 @@
   {
     "name": "It's Okay to Not Be Okay",
     "id": "its-okay-to-not-be-okay",
-    "img_url": "https://example.com/okay-not-okay.jpg",
+    "img_url": "its_ok_to_not_be_ok.jpg",
     "rating": 9.6,
     "description": "A unique romance develops between a caretaker and a children's book writer.",
     "cast": ["Kim Soo Hyun", "Seo Ye Ji"],
@@ -32,7 +32,7 @@
   {
     "name": "True Beauty",
     "id": "true-beauty",
-    "img_url": "https://example.com/true-beauty.jpg",
+    "img_url": "true_beauty.jpg",
     "rating": 9.3,
     "description": "A girl hides her bare face under makeup and finds love and acceptance.",
     "cast": ["Moon Ga Young", "Cha Eun Woo", "Hwang In Yeop"],
@@ -42,7 +42,7 @@
   {
     "name": "Goblin: The Lonely and Great God",
     "id": "goblin",
-    "img_url": "https://example.com/goblin.jpg",
+    "img_url": "goblin_the_great_god.jpg",
     "rating": 9.9,
     "description": "An immortal goblin seeks his bride to end his cursed life.",
     "cast": ["Gong Yoo", "Kim Go Eun", "Lee Dong Wook"],
@@ -52,7 +52,7 @@
   {
     "name": "Vincenzo",
     "id": "vincenzo",
-    "img_url": "https://example.com/vincenzo.jpg",
+    "img_url": "vinacenzo.jpg",
     "rating": 9.5,
     "description": "A Korean-Italian mafia consigliere returns to Korea to reclaim hidden gold.",
     "cast": ["Song Joong Ki", "Jeon Yeo Been"],
@@ -62,7 +62,7 @@
   {
     "name": "My Love From the Star",
     "id": "my-love-from-the-star",
-    "img_url": "https://example.com/my-love-star.jpg",
+    "img_url": "my_love_from_the_star.jpg",
     "rating": 9.4,
     "description": "An alien who landed on Earth 400 years ago falls in love with a modern actress.",
     "cast": ["Kim Soo Hyun", "Jun Ji Hyun"],
@@ -72,7 +72,7 @@
   {
     "name": "Healer",
     "id": "healer",
-    "img_url": "https://example.com/healer.jpg",
+    "img_url": "healer.jpg",
     "rating": 9.3,
     "description": "A night courier with top-notch fighting skills gets entangled in a conspiracy.",
     "cast": ["Ji Chang Wook", "Park Min Young"],
@@ -82,7 +82,7 @@
   {
     "name": "Start-Up",
     "id": "start-up",
-    "img_url": "https://example.com/startup.jpg",
+    "img_url": "start_up.jpg",
     "rating": 9.2,
     "description": "Young entrepreneurs chase dreams of success in Korea’s Silicon Valley.",
     "cast": ["Bae Suzy", "Nam Joo Hyuk", "Kim Seon Ho"],
@@ -92,7 +92,7 @@
   {
     "name": "Hotel Del Luna",
     "id": "hotel-del-luna",
-    "img_url": "https://example.com/hotel-del-luna.jpg",
+    "img_url": "hotel_del_luna.jpg",
     "rating": 9.7,
     "description": "A hotel for ghosts is run by a mysterious woman cursed for eternity.",
     "cast": ["IU", "Yeo Jin Goo"],
