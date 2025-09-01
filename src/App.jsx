@@ -1,11 +1,7 @@
 import NetflixSeries from "./components/NetflixSeries";
 
 const App = () => {
-  return (
-    <>
-    <NetflixSeries />
-    </>
-  );
+  return <NetflixSeries />; 
 };
 
 
