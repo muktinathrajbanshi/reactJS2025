@@ -19,22 +19,7 @@
     return genre;
   };
 
-  // if(age < 18) {
-  //   return (
-  //     <div>
-  //       <div>
-  //         <img src="tare_zameen_par.jpg" alt="web img" width="40%" height="40%" />
-  //       </div>
-  //       <h2>Name : {name}</h2>
-  //       <h3>Rating : {5+3.2}</h3>
-  //       <p>
-  //       Summary : {summary}
-  //       </p>
-  //       <p>Genre: {returnGenre()}</p>
-  //       <button>Not Available</button>
-  //     </div>
-  //   );
-  // }
+  
 
    return (
       <div>
@@ -57,11 +42,3 @@
 };
 
 export default NetflixSeries;
-
-export const Header = () => {
-    return <p>copyright @muktinathtech </p>
-}
-
-export const Footer = () => {
-    return <p>copyright @muktinathtech </p>
-}
