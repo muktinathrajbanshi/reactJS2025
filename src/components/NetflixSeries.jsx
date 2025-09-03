@@ -1,5 +1,5 @@
 import seriesData from "../api/seriesData.json";
-import { SeriesCard } from "./Lists";
+import { SeriesCard } from "./SeriesCard";
 
 const NetflixSeries = () => {
   
