@@ -1,0 +1,23 @@
+button {
+  margin: 2rem 60rem;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 18rem;
+  padding: 1.2rem 2.4rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #27ae60;
+}
