@@ -1,4 +1,4 @@
-button {
+/* button {
   margin: 2rem 60rem;
   background: #2c3e50;
   color: #fff;
@@ -20,4 +20,37 @@ button {
 
 button:hover {
   background: #27ae60;
+} */
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div .g-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 30rem;
+  border: 6px solid #000;
+  width: 75rem;
+  height: 34rem;
+  background-color: #2980b9;
+}
+
+.main-div .p-div {
+  border: 6px solid #000;
+  width: 63rem;
+  height: 22rem;
+  background-color: #27ae60;
+}
+
+.main-div .c-div {
+  margin: 7rem 5rem;
+  border: 6px solid #000;
+  width: 51rem;
+  height: 7rem;
+  background-color: #f39c12;
+  font-size: 1.5rem;
 }
