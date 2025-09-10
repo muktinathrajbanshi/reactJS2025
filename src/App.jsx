@@ -1,10 +1,11 @@
 // import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css";
+import { DerivedState } from "./components/DerivedState";
 import "./components/Netflix.module.css";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
-import { State } from "./components/hooks/State";
+// import { State } from "./components/hooks/State";
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
     {/* <EventHandling /> */}
     {/* <EventProps /> */}
     {/* <EventPropagation /> */}
-    <State />
-    <Sibling />
+    {/* <State /> */}
+    {/* <Sibling /> */}
+    <DerivedState />
     </section>
   ); 
 };
