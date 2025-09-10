@@ -1,7 +1,8 @@
 // import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css";
 // import { DerivedState } from "./components/DerivedState";
-import { DerivedState } from "./components/DericedState";
+// import { DerivedState } from "./components/DericedState";
+import { LiftStateUp } from "./components/LiftStateUp";
 import "./components/Netflix.module.css";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
@@ -18,7 +19,8 @@ const App = () => {
     {/* <EventPropagation /> */}
     {/* <State /> */}
     {/* <Sibling /> */}
-    <DerivedState />
+    {/* <DerivedState /> */}
+    <LiftStateUp />
     </section>
   ); 
 };
