@@ -1,6 +1,7 @@
 // import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css";
-import { DerivedState } from "./components/DerivedState";
+// import { DerivedState } from "./components/DerivedState";
+import { DerivedState } from "./components/DericedState";
 import "./components/Netflix.module.css";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
