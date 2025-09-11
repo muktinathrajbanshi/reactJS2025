@@ -2,8 +2,9 @@
 // import "./components/Netflix.css";
 // import { DerivedState } from "./components/DerivedState";
 // import { DerivedState } from "./components/DericedState";
-import { LiftStateUp } from "./components/LiftStateUp";
+// import { LiftStateUp } from "./components/LiftStateUp";
 import "./components/Netflix.module.css";
+import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
@@ -20,7 +21,8 @@ const App = () => {
     {/* <State /> */}
     {/* <Sibling /> */}
     {/* <DerivedState /> */}
-    <LiftStateUp />
+    {/* <LiftStateUp /> */}
+    <ToggleSwitch />
     </section>
   ); 
 };
