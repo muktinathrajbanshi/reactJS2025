@@ -3,6 +3,7 @@ import "./Todo.css";
 
 export const Todo = () => {
     const [inputValue, setInputValue] = useState("");
+    const [task, setTask] = useState([]);
 
     const handleInputChange = (value) => {
         setInputValue(value);
@@ -10,6 +11,18 @@ export const Todo = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
+
+        if(!inputValue) return;
+
+        if(task.includes(inputValue)) {
+            setInputValue("");
+            return;
+        } 
+
+        setTask((prevTask) => [ ... prevTask, inputValue]);
+
+        setInputValue("");
+         
     };
 
   return (
