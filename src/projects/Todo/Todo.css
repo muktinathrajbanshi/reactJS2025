@@ -1,9 +1,9 @@
-section {
+/* section {
   width: 100%;
   margin-top: 10rem;
   display: flex;
   justify-content: center;
-}
+} */
 
 .todo-container {
   align-items: center;
@@ -76,6 +76,12 @@ form input {
   width: 100%;
   background-color: #f2f3f4;
   color: var(--primary-color);
+}
+
+.check-btn {
+}
+
+.delete-btn {
 }
 
 .todo-input {

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Todo.css";
+import { MdCheck, MdDeleteForever } from "react-icons/md";
+
 
 export const Todo = () => {
     const [inputValue, setInputValue] = useState("");
@@ -27,7 +29,7 @@ export const Todo = () => {
 
   return (
     <>
-      <div className="todo-container">
+      <section className="todo-container">
         <header>
             <h1>Todo List</h1>
         </header>
@@ -47,7 +49,26 @@ export const Todo = () => {
                 </div>
             </form>
         </section>
-      </div>
+        <section className="myUnordList">
+            <ul>
+                {
+                    task.map((curTask, index) => {
+                        return (
+                            <li key={index} className="todo-item">
+                                <span>{curTask}</span>
+                                <button className="check-btn">
+                                <MdCheck />
+                                </button>
+                                <button className="delete-btn">
+                                <MdDeleteForever />
+                                </button>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+        </section>
+      </section>
     </>
   );
 };
