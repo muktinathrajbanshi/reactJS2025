@@ -77,3 +77,7 @@ form input {
   background-color: #f2f3f4;
   color: var(--primary-color);
 }
+
+.todo-input {
+  color: #000;
+}
