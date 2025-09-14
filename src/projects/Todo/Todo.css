@@ -1,89 +1,15 @@
-/* section {
-  width: 100%;
-  margin-top: 10rem;
-  display: flex;
-  justify-content: center;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .todo-container {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-top: 3%;
-  background-image: linear-gradient(100deg, #001214, #001f29);
-  color: white;
-  transition: 0.3s linear;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -ms-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-  overflow: hidden;
-}
-
-.header,
-.form,
-.datetime {
-  margin: 0 1rem;
-  min-height: 10vh;
-  width: 100%;
-}
-
-.header {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 3rem;
-  min-height: 25vh;
-  width: 100%;
-}
-
-section h1 {
-  color: #fff;
-  font-size: 4.8rem;
-  text-align: center;
-}
-
-.date-time {
-  font-size: 2.4rem;
-  text-align: center;
-}
-
-form {
-  display: flex;
-  font-size: 1.7rem;
   justify-content: center;
-  margin: 15px 0;
-  padding: 0.8rem;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-}
-
-form input {
-  padding: 10px;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  border: none;
-  outline: none;
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
-  max-width: 500px;
-  transition: background-color 200ms ease;
-  -webkit-transition: background-color 200ms ease;
-  -moz-transition: background-color 200ms ease;
-  -ms-transition: background-color 200ms ease;
-  -o-transition: background-color 200ms ease;
-  width: 100%;
-  background-color: #f2f3f4;
-  color: var(--primary-color);
-}
-
-.check-btn {
-}
-
-.delete-btn {
-}
-
-.todo-input {
-  color: #000;
+  height: 100vh;
+  background-color: #34495e;
 }
