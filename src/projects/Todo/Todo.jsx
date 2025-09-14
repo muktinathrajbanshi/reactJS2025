@@ -34,7 +34,7 @@ export const Todo = () => {
             <h1>Todo List</h1>
         </header>
         <section className="form">
-            <form onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit} className="form-flex">
                 <div>
                     <input 
                     type="text" 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Flamenco&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,500;1,500&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Poppins:wght@500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +14,51 @@
   width: 100%;
   height: 100vh;
   background-color: #34495e;
+  font-family: "Jost", sans-serif;
+  padding-bottom: 25rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* .form {
+  display: flex;
+} */
+
+.form-flex {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.form .todo-input {
+  width: 18rem;
+  height: 2.3rem;
+  padding-left: 0.3rem;
+  border: none;
+  outline: none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.form .todo-btn {
+  height: 2.3rem;
+  width: 5rem;
+  background-color: #686de0;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.form .todo-btn:hover {
+  background-color: #f9ca24;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
