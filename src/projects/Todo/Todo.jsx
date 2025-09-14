@@ -25,11 +25,17 @@ export const Todo = () => {
         setTask((prevTask) => [ ... prevTask, inputValue]);
 
         setInputValue("");
-         
-        console.log("hey");
+        
     };
 
-    
+    //todo handleDeleteTodo function
+
+    const handleDeleteTodo = (value) => {
+        console.log(task);
+        console.log(value);
+        const updatedTask = task.filter((curTask) => curTask !== value);
+        setTask(updatedTask);
+    };
 
     //todo Date and Time
 
@@ -80,7 +86,7 @@ export const Todo = () => {
                                 <button className="check-btn">
                                 <MdCheck />
                                 </button>
-                                <button className="delete-btn">
+                                <button className="delete-btn" onClick={() => handleDeleteTodo(curTask)}>
                                 <MdDeleteForever />
                                 </button>
                             </li>
@@ -88,6 +94,9 @@ export const Todo = () => {
                     })
                 }
             </ul>
+        </section>
+        <section>
+            <button className="clear-btn">Clear all</button>
         </section>
       </section>
     </>
