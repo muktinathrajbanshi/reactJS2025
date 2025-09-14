@@ -15,7 +15,7 @@
   height: 100vh;
   background-color: #34495e;
   font-family: "Jost", sans-serif;
-  padding-bottom: 25rem;
+  padding-bottom: 12rem;
 }
 
 h1 {
@@ -61,4 +61,61 @@ h1 {
   -moz-transition: background-color 0.3s ease;
   -ms-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
+}
+
+.myUnordList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-right: 0.5rem;
+  align-items: center;
+  width: 23rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.todo-item .challenge {
+  width: 20rem;
+  /* background-color: red; */
+}
+
+.todo-item .check-btn,
+.todo-item .delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.todo-item .check-btn {
+  margin-left: 12rem;
+}
+
+.todo-item .delete-btn {
+  background-color: red;
 }

@@ -55,7 +55,9 @@ export const Todo = () => {
                     task.map((curTask, index) => {
                         return (
                             <li key={index} className="todo-item">
+                                <div className="challenge">
                                 <span>{curTask}</span>
+                                </div>
                                 <button className="check-btn">
                                 <MdCheck />
                                 </button>
