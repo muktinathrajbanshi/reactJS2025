@@ -28,13 +28,18 @@ export const Todo = () => {
         
     };
 
-    //todo handleDeleteTodo function
+    //todo handleDeleteTodo functionality
 
     const handleDeleteTodo = (value) => {
         console.log(task);
         console.log(value);
         const updatedTask = task.filter((curTask) => curTask !== value);
         setTask(updatedTask);
+    };
+
+    //todo handleClearTodoData functionality
+    const handleClearTodoData = () => {
+        setTask([]);
     };
 
     //todo Date and Time
@@ -96,7 +101,7 @@ export const Todo = () => {
             </ul>
         </section>
         <section>
-            <button className="clear-btn">Clear all</button>
+            <button className="clear-btn" onClick={handleClearTodoData}>Clear all</button>
         </section>
       </section>
     </>

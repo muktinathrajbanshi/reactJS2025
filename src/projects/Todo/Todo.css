@@ -126,6 +126,7 @@ header {
 }
 
 .todo-item .delete-btn {
+  cursor: pointer;
   background-color: red;
 }
 
@@ -158,4 +159,5 @@ header {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+  cursor: pointer;
 }
