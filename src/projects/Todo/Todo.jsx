@@ -31,9 +31,7 @@ export const Todo = () => {
     //todo handleDeleteTodo functionality
 
     const handleDeleteTodo = (value) => {
-        console.log(task);
-        console.log(value);
-        const updatedTask = task.filter((curTask) => curTask !== value);
+        const updatedTask = task.filter((curTask) => curTask.content !== value);
         setTask(updatedTask);
     };
 
