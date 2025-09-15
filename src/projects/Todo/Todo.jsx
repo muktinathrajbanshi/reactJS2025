@@ -33,16 +33,12 @@ export const Todo = () => {
         setTask([]);
     };
 
-    //todo Date and Time
-
-    <TodoDate />
-
   return (
     <>
       <section className="todo-container">
         <header>
             <h1>Todo List</h1>
-          
+             <TodoDate />
         </header>
         <TodoForm onAddTodo={handleFormSubmit} />
         <section className="myUnordList">
