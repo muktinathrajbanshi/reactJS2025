@@ -40,6 +40,18 @@ export const Todo = () => {
         setTask([]);
     };
 
+    //todo handleCheckedTodo functionality
+    const handleCheckedTodo = (content) => {
+        const updatedTask = task.map((curTask) => {
+            if(curTask.content === content) {
+                return {...curTask, checked: !curTask.checked};
+            }else {
+                return curTask;
+            }
+        });
+        setTask(updatedTask);
+    };
+
   return (
     <>
       <section className="todo-container">
@@ -56,7 +68,9 @@ export const Todo = () => {
                             <TodoList 
                             key={curTask.id} 
                             data={curTask.content} 
+                            checked={curTask.checked}
                             onHandleDeleteTodo={handleDeleteTodo} 
+                            onHandleCheckTodo = {handleCheckedTodo}
                             />
                         );
                     })

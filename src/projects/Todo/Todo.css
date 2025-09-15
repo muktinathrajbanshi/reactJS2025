@@ -161,3 +161,11 @@ header {
   -o-transform: scale(1.1);
   cursor: pointer;
 }
+
+.challenge .checkList {
+  text-decoration: line-through;
+}
+
+.challenge .notCheckList {
+  text-decoration: none;
+}
