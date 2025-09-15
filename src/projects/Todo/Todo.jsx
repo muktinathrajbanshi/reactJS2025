@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Todo.css";
 import { MdCheck, MdDeleteForever } from "react-icons/md";
 import { TodoForm } from './TodoForm';
+import { TodoList } from './TodoList';
 
 
 export const Todo = () => {
@@ -59,17 +60,7 @@ export const Todo = () => {
                 {
                     task.map((curTask, index) => {
                         return (
-                            <li key={index} className="todo-item">
-                                <div className="challenge">
-                                <span>{curTask}</span>
-                                </div>
-                                <button className="check-btn">
-                                <MdCheck />
-                                </button>
-                                <button className="delete-btn" onClick={() => handleDeleteTodo(curTask)}>
-                                <MdDeleteForever />
-                                </button>
-                            </li>
+                            <TodoList key={index} data={curTask} onHandleDeleteTodo={handleDeleteTodo} />
                         );
                     })
                 }
