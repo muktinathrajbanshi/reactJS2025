@@ -13,10 +13,19 @@ export const Todo = () => {
    
 
     const handleFormSubmit = (inputValue) => {
+        const {id, content, checked} = inputValue;
 
-        if(!inputValue) return;
-        if(task.includes(inputValue)) return; 
-        setTask((prevTask) => [ ... prevTask, inputValue]);
+        //to check if the input field is empty or not
+        if(!content) return;
+
+        //to check if the data is already existed or not
+        // if(task.includes(inputValue)) return; 
+        const ifTodoContentMatched = task.find(
+            (curTask) => curTask.content === content
+        );
+        if(ifTodoContentMatched) return;
+
+        setTask((prevTask) => [ ... prevTask, {id, content, checked}]);
     };
 
     //todo handleDeleteTodo functionality
@@ -44,11 +53,11 @@ export const Todo = () => {
         <section className="myUnordList">
             <ul>
                 {
-                    task.map((curTask, index) => {
+                    task.map((curTask) => {
                         return (
                             <TodoList 
-                            key={index} 
-                            data={curTask} 
+                            key={curTask.id} 
+                            data={curTask.content} 
                             onHandleDeleteTodo={handleDeleteTodo} 
                             />
                         );
