@@ -4,9 +4,14 @@ import { TodoForm } from './TodoForm';
 import { TodoList } from './TodoList';
 import { TodoDate } from './TodoDate';
 
+const todoKey = "reactTodo";
 
 export const Todo = () => {
-    const [task, setTask] = useState([]);
+    const [task, setTask] = useState(() => {
+        const rawTodos = localStorage.getItem(todoKey);
+        if(!rawTodos) return [];
+        return JSON.parse(rawTodos);
+    });
 
     const handleFormSubmit = (inputValue) => {
         const {id, content, checked} = inputValue;
@@ -25,7 +30,7 @@ export const Todo = () => {
     };
 
     //todo add data to localStorage
-    localStorage.setItem("reactTodo", JSON.stringify(task));
+    localStorage.setItem(todoKey, JSON.stringify(task));
 
     //todo handleDeleteTodo functionality
 
