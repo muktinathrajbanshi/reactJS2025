@@ -8,4 +8,4 @@ export const getLocalStorageTodoData = () => {
 
 export const setLocalStorageTodoData = (task) => {
     return localStorage.setItem(todoKey, JSON.stringify(task));
-};
+}; 
