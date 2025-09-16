@@ -42,6 +42,7 @@ header {
 }
 
 .form .todo-input {
+  font-size: 1.2rem;
   width: 18rem;
   height: 2.3rem;
   padding-left: 0.3rem;
