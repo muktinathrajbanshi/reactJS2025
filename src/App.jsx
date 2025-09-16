@@ -4,6 +4,7 @@
 // import { DerivedState } from "./components/DericedState";
 // import { LiftStateUp } from "./components/LiftStateUp";
 import "./components/Netflix.module.css";
+import { ShortCircuitExample } from "./components/ShortCircuit";
 import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 // import { EventHandling } from "./components/EventHandling";
@@ -24,7 +25,8 @@ const App = () => {
     {/* <DerivedState /> */}
     {/* <LiftStateUp /> */}
     {/* <ToggleSwitch /> */}
-    <Todo />
+    {/* <Todo /> */}
+    <ShortCircuitExample />
     </section>
   ); 
 };
