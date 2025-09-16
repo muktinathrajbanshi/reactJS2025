@@ -6,11 +6,7 @@ import { TodoDate } from './TodoDate';
 
 
 export const Todo = () => {
-    
     const [task, setTask] = useState([]);
-    
-
-   
 
     const handleFormSubmit = (inputValue) => {
         const {id, content, checked} = inputValue;
@@ -27,6 +23,9 @@ export const Todo = () => {
 
         setTask((prevTask) => [ ... prevTask, {id, content, checked}]);
     };
+
+    //todo add data to localStorage
+    localStorage.setItem("reactTodo", JSON.stringify(task));
 
     //todo handleDeleteTodo functionality
 
