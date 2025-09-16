@@ -164,12 +164,12 @@ header {
   cursor: pointer;
 }
 
-.challenge .checkList {
+.spanData .checkList {
   position: relative;
   display: inline-block;
 }
 
-.challenge .checkList::after {
+.spanData .checkList::after {
   content: "";
   position: absolute;
   left: 0;
@@ -180,6 +180,6 @@ header {
   transform: translateY(-50%);
 }
 
-.challenge .notCheckList {
+.spanData .notCheckList {
   text-decoration: none;
 }
