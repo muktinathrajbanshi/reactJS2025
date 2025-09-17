@@ -18,9 +18,13 @@
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
   width: 50%;
   height: auto;
-  padding: 2rem 1rem;
-  background-color: #fff;
-  /* border: 1px solid red; */
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: #f5f6fa;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
 
 .container-box h1 {
@@ -31,5 +35,29 @@
 
 .container-box p {
   margin-top: 1rem;
-  text-align: left;
+  font-size: 1.2rem;
+}
+
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  width: 32%;
+  color: #fff;
+  background-color: #00a8ff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
 }
