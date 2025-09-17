@@ -3,9 +3,10 @@
 // import { DerivedState } from "./components/DerivedState";
 // import { DerivedState } from "./components/DericedState";
 // import { LiftStateUp } from "./components/LiftStateUp";
-import "./components/Netflix.module.css";
-import { ShortCircuitExample } from "./components/ShortCircuit";
-import { Todo } from "./projects/Todo/Todo";
+import { Counter } from "./components/hooks/useState";
+// import "./components/Netflix.module.css";
+// import { ShortCircuitExample } from "./components/ShortCircuit";
+// import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
@@ -26,7 +27,8 @@ const App = () => {
     {/* <LiftStateUp /> */}
     {/* <ToggleSwitch /> */}
     {/* <Todo /> */}
-    <ShortCircuitExample />
+    {/* <ShortCircuitExample /> */}
+    <Counter />
     </section>
   ); 
 };
