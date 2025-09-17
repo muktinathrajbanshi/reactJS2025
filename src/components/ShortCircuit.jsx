@@ -1,7 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
 import "./ShortCircuit.css";
 
 export const ShortCircuitExample = () => {
+
+  const[isLoggedIn, setIsLoggedIn] = useState(true);
+
   return (
     <>
       <div className="container short-container">
@@ -9,10 +12,12 @@ export const ShortCircuitExample = () => {
         <div className="container-box">
         <h1>Welcome to the ShortCircuit Evaluation</h1>
 
-        <p>You are logged in!</p>
+        {/* Conditional rendering using short circuit evaluation  */}
+       { isLoggedIn && <p>You are logged in!</p> }
 
+        {/* Another example of short circuit evaluation  */}
         <div className="grid-three-cols">
-            <button>Toggle Login State</button>
+            <button onClick={() => setIsLoggedIn(!isLoggedIn)}>Toggle Login State</button>
             <button>Set User</button>
             <button>Clear User</button>
         </div>
