@@ -18,12 +18,12 @@ export const ShortCircuitExample = () => {
 
         {/* Another example of short circuit evaluation  */}
 
-        {user ? `Hello ${user}` : "You are logged in!"}
+        {user ? `Hello ${user}` : "Plz logged in!"}
 
         <div className="grid-three-cols">
             <button onClick={() => setIsLoggedIn(!isLoggedIn)}>Toggle Login State</button>
             <button onClick={() => setUser("Muktinath Rajbanshi")}>Set User</button>
-            <button>Clear User</button>
+            <button onClick={() => setUser("")}>Clear User</button>
         </div>
         </div>
       </div>
