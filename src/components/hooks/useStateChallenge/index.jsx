@@ -5,6 +5,21 @@ export const UseStateChallenge = () => {
 
     const [count, setCount] = useState(0);
 
+   const handleIncrement = () => {
+    setCount(count + 1);
+   };
+
+   const handleDecrement = () => {
+
+    if(count >= 0) {
+        setCount(count -1);
+    }
+   };
+
+   const handleReset = () => {
+    setCount(0);
+   };
+
   return (
     <>
       <div className="container">
@@ -14,9 +29,9 @@ export const UseStateChallenge = () => {
             <p>Step:<input type="text" className="input-field" /></p>
 
             <div className="grid-three-cols">
-                <button onClick={() => setCount(count + 1)}>Increment</button>
-                <button>Decrement</button>
-                <button>Reset</button>
+                <button onClick={handleIncrement}>Increment</button>
+                <button onClick={handleDecrement}>Decrement</button>
+                <button onClick={handleReset}>Reset</button>
             </div>
         </div>
       </div>
