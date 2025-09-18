@@ -40,12 +40,16 @@ p {
   margin-top: 1rem;
 }
 
+.color-value {
+  color: #0984e3;
+}
+
 .grid-three-cols {
   grid-template-columns: repeat(3, 1fr);
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 button {
@@ -59,9 +63,15 @@ button {
   border: none;
   outline: none;
   margin-bottom: 3rem;
+  cursor: pointer;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+}
+
+.input-field {
+  margin-left: 1.5rem;
+  padding: 0.3rem 0.5rem;
 }
