@@ -1,19 +1,21 @@
-import React from 'react';
+import { useState } from 'react';
 
 export const ControlledForm = () => {
 
-    //  const [name, setName] = useState("");
+     const [name, setName] = useState("");
 
-    // const handleChange = (event) => {
-    //     setName(event.target.value);
-    // };
+    const handleChange = (event) => {
+        setName(event.target.value);
+    };
 
     const handleSubmit = (event) => {
         // Handle form submission with the controlled state (name)
         event.preventDefault();
         
-        const dataValue = document.querySelector("#inputName").value;
-        console.log(dataValue);
+        // const dataValue = document.querySelector("#inputName").value;
+        // console.log(dataValue);
+        console.log(name);
+        
         
     }
 
@@ -28,6 +30,8 @@ export const ControlledForm = () => {
                 <input 
                 type="text"
                 name="name"
+                value={name}
+                onChange={handleChange}
                 id="inputName" />
             </label>
             <br />
