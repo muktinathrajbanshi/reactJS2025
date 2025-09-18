@@ -4,7 +4,8 @@
 // import { DerivedState } from "./components/DericedState";
 // import { LiftStateUp } from "./components/LiftStateUp";
 // import { Counter } from "./components/hooks/useState";
-import { UseStateChallenge } from "./components/hooks/useStateChallenge";
+import { ControlledForm } from "./components/hooks/useState/Controlled";
+// import { UseStateChallenge } from "./components/hooks/useStateChallenge";
 // import "./components/Netflix.module.css";
 // import { ShortCircuitExample } from "./components/ShortCircuit";
 // import { Todo } from "./projects/Todo/Todo";
@@ -30,7 +31,8 @@ const App = () => {
     {/* <Todo /> */}
     {/* <ShortCircuitExample /> */}
     {/* <Counter /> */}
-    <UseStateChallenge />
+    {/* <UseStateChallenge /> */}
+    <ControlledForm />
     </section>
   ); 
 };

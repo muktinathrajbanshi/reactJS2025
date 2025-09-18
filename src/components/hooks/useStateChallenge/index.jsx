@@ -27,7 +27,7 @@ export const UseStateChallenge = () => {
             <p>Step: 
             <input 
             type="number"
-            value={step}
+            // value={step}
             onChange={(e) =>setStep(Number(e.target.value))}
             className="input-field" 
             /></p>
