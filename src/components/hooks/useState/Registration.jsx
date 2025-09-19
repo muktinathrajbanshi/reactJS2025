@@ -21,18 +21,36 @@ export const RegistrationForm = () => {
             case "lastName":
                 setLastName(value);
                 break;
-        }
+             
+            case "email":
+                setEmail(value);
+                break;
 
-        setFirstName(e.target.value);
-        setLastName(e.target.value);
-        setEmail(e.target.value);
-        setPassword(e.target.value);
-        setPhoneNumber(e.target.value);
+            case "password":
+                setPassword(value);
+                break;
+
+            case "phone":
+                setPhoneNumber(value);
+                break;
+        }
+    };
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        const formData = {
+            firstName,
+            lastName,
+            email,
+            password,
+            phoneNumber
+        };
+        console.log(formData);
     };
 
   return (
     <>
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="container">
             <div className="form-maintain">
                 <h1>sign Up</h1>
