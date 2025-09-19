@@ -5,6 +5,7 @@
 }
 
 .container {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -61,4 +62,21 @@ input {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
   cursor: pointer;
+}
+
+.summary {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  margin-bottom: 40rem;
+  background-color: #ecf0f1;
+}
+
+.summary p {
+  font-size: 1.3rem;
+}
+
+.summary span {
+  font-weight: bold;
+  color: #00a8ff;
 }

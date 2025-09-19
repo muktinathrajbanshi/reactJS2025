@@ -132,6 +132,18 @@ export const RegistrationForm = () => {
             </div>
         </div>
       </form>
+
+        <section
+        className="summary"
+        >
+            <p>
+                Hello, my name is 
+                <span> {firstName} {lastName}
+                </span>
+                . My email address is <span>{email}</span> and my phone number is 
+                <span> {phoneNumber} </span>.
+            </p>
+        </section>
     </>
   );
 };
