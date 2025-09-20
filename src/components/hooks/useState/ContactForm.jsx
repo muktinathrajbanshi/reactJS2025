@@ -4,14 +4,14 @@ import "./index.css";
 export const ContactForm = () => {
 
 const [username, setUsername] = useState("");
-const [password, setPassword] = useState("");
+const [email, setEmail] = useState("");
 const [message, setMessage] = useState("");
 
 const handleFormSubmit = (event) => {
     event.preventDefault();
     const contactData = {
         username,
-        password,
+        email,
         message,
     };
     console.log(contactData);
@@ -34,14 +34,14 @@ const handleFormSubmit = (event) => {
                 onChange={(e) => setUsername(e.target.value)}
                  />
 
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Email</label>
                 <input 
-                type="password" 
-                name="password" 
+                type="email" 
+                name="email" 
                 required 
                 autoComplete="off" 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <label htmlFor="message">Message</label>
