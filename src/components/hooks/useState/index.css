@@ -29,6 +29,7 @@ label {
   margin-top: 1rem;
 }
 
+textarea,
 input {
   border: none;
   outline: none;
