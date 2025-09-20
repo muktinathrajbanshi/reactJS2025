@@ -6,33 +6,42 @@ export const LoginForm = () => {
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 
+const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    const loginData = {
+        username,
+        password,
+    };
+    console.log(loginData);
+}
+
 
   return (
     <>
       <div className="container">
         <div className="card">
             <h1>Login Form</h1>
-            <form>
+            <form onSubmit={handleFormSubmit}>
                 <label htmlFor="username">Username</label>
                 <input 
                 type="text" 
                 name="username" 
                 required 
                 autoComplete="off"
-                value={usename}
+                value={username}
                 onChange={(e) => setUsername(e.target.value)}
                  />
 
                 <label htmlFor="password">Password</label>
                 <input 
-                type="text" 
+                type="password" 
                 name="password" 
                 required 
                 autoComplete="off" 
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 />
-
                 <button type="submit">Login</button>
             </form>
         </div>
