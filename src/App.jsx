@@ -5,7 +5,8 @@
 // import { LiftStateUp } from "./components/LiftStateUp";
 // import { Counter } from "./components/hooks/useState";
 // import { ControlledForm } from "./components/hooks/useState/Controlled";
-import { RegistrationForm } from "./components/hooks/useState/Registration";
+// import { RegistrationForm } from "./components/hooks/useState/Registration";
+import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 // import { UseStateChallenge } from "./components/hooks/useStateChallenge";
 // import "./components/Netflix.module.css";
 // import { ShortCircuitExample } from "./components/ShortCircuit";
@@ -34,7 +35,8 @@ const App = () => {
     {/* <Counter /> */}
     {/* <UseStateChallenge /> */}
     {/* <ControlledForm /> */}
-    <RegistrationForm />
+    {/* <RegistrationForm /> */}
+    <RegistrationFormReact />
     </section>
   ); 
 };
