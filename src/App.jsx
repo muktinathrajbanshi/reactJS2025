@@ -6,8 +6,7 @@
 // import { Counter } from "./components/hooks/useState";
 // import { ControlledForm } from "./components/hooks/useState/Controlled";
 // import { RegistrationForm } from "./components/hooks/useState/Registration";
-import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
-// import { UseStateChallenge } from "./components/hooks/useStateChallenge";
+// import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 // import "./components/Netflix.module.css";
 // import { ShortCircuitExample } from "./components/ShortCircuit";
 // import { Todo } from "./projects/Todo/Todo";
@@ -16,6 +15,8 @@ import { RegistrationFormReact } from "./components/hooks/useState/RegistrationR
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation } from "./components/EventPropagation";
 // import { State } from "./components/hooks/State";
+
+import { UseStateChallenge } from "./components/hooks/useState/Challenge";
 
 const App = () => {
   return (
@@ -33,10 +34,10 @@ const App = () => {
     {/* <Todo /> */}
     {/* <ShortCircuitExample /> */}
     {/* <Counter /> */}
-    {/* <UseStateChallenge /> */}
+    <UseStateChallenge />
     {/* <ControlledForm /> */}
     {/* <RegistrationForm /> */}
-    <RegistrationFormReact />
+    {/* <RegistrationFormReact /> */}
     </section>
   ); 
 };
