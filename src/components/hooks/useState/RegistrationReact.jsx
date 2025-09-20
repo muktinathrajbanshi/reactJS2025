@@ -14,40 +14,12 @@ export const RegistrationFormReact = () => {
     const handleInputChange = (e) => {
 
         const {name, value} = e.target;
-
-        switch(name){
-            case "firstName":
-                setFirstName(value);
-                break;
-            
-            case "lastName":
-                setLastName(value);
-                break;
-             
-            case "email":
-                setEmail(value);
-                break;
-
-            case "password":
-                setPassword(value);
-                break;
-
-            case "phone":
-                setPhoneNumber(value);
-                break;
-        }
+        setUser((prev) => ({ ... prev, [name]: value }) );
     };
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        const formData = {
-            firstName,
-            lastName,
-            email,
-            password,
-            phoneNumber
-        };
-        console.log(formData);
+        console.log(user);
     };
 
   return (
@@ -112,7 +84,7 @@ export const RegistrationFormReact = () => {
 
                     <input 
                     type="phone"
-                    name="phone"
+                    name="phoneNumber"
                     placeholder="9823978647"
                     required
                     value={user.phoneNumber}
