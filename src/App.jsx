@@ -16,7 +16,9 @@
 // import { EventPropagation } from "./components/EventPropagation";
 // import { State } from "./components/hooks/State";
 
-import { UseStateChallenge } from "./components/hooks/useState/Challenge";
+import { LoginForm } from "./components/hooks/useState/LoginForm";
+
+// import { UseStateChallenge } from "./components/hooks/useState/Challenge";
 
 const App = () => {
   return (
@@ -34,10 +36,11 @@ const App = () => {
     {/* <Todo /> */}
     {/* <ShortCircuitExample /> */}
     {/* <Counter /> */}
-    <UseStateChallenge />
+    {/* <UseStateChallenge /> */}
     {/* <ControlledForm /> */}
     {/* <RegistrationForm /> */}
     {/* <RegistrationFormReact /> */}
+    <LoginForm />
     </section>
   ); 
 };
