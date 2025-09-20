@@ -3,17 +3,33 @@ import "./index.css";
 
 export const ContactForm = () => {
 
-const [username, setUsername] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
+// const [username, setUsername] = useState("");
+// const [email, setEmail] = useState("");
+// const [message, setMessage] = useState("");
+
+const [contactData, setContactData] = useState({
+    username: "",
+    email: "",
+    message: "",
+});
+
+const handleInputChange = (e) => {
+    const {name, value} = e.target;
+    setContactData((prev) => ({
+        ... prev, 
+        [name]: value,
+    }));
+};
 
 const handleFormSubmit = (event) => {
     event.preventDefault();
-    const contactData = {
-        username,
-        email,
-        message,
-    };
+    // const contactData = {
+    //     username,
+    //     email,
+    //     message,
+    // };
+
+
     console.log(contactData);
     
 }
@@ -30,8 +46,9 @@ const handleFormSubmit = (event) => {
                 name="username" 
                 required 
                 autoComplete="off"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={contactData.username}
+                onChange={handleInputChange}
+                // onChange={(e) => setUsername(e.target.value)}
                  />
 
                 <label htmlFor="password">Email</label>
@@ -40,8 +57,9 @@ const handleFormSubmit = (event) => {
                 name="email" 
                 required 
                 autoComplete="off" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={contactData.email}
+                onChange={handleInputChange}
+                // onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <label htmlFor="message">Message</label>
@@ -50,8 +68,9 @@ const handleFormSubmit = (event) => {
                 required
                 autoComplete="off"
                 rows="6"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                value={contactData.message}
+                onChange={handleInputChange}
+                // onChange={(e) => setMessage(e.target.value)}
                 />
                 <button type="submit">Send Message</button>
             </form>
