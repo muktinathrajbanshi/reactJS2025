@@ -7,9 +7,9 @@ export const ReactUseEffect = () => {
 
 
     useEffect(() => {
-        console.log("Hello useEffect");
+        console.log("count value:", count);
         
-    }, []);
+    }, [count]);
 
   return (
     <>
