@@ -6,6 +6,10 @@ export const Challenge = () => {
     const [count, setCount] = useState(0);
     const [name, setName] = useState("");
 
+    useEffect(() => {
+        document.title = `count: ${count}`;
+    }, [count]);
+
 
     useEffect(() => {
         console.log(name);
