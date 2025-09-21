@@ -1,9 +1,25 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+import "./index.css";
 
 export const ReactUseEffect = () => {
+
+    const [count, setCount] = useState(0);
+
+
+    useEffect(() => {
+        console.log("Hello useEffect");
+        
+    }, []);
+
   return (
     <>
-      <h1>Hello, useEffect!</h1>
+      <div className="container">
+        <div className="effect-container">
+            <h1>useEffect Hook</h1>
+            <p>Count: {count}</p>
+            <button onClick={() => setCount(count + 1)}>Increment</button>
+        </div>
+      </div>
     </>
   );
 };
