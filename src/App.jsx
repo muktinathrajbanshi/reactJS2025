@@ -16,7 +16,8 @@
 // import { EventPropagation } from "./components/EventPropagation";
 // import { State } from "./components/hooks/State";
 
-import { ReactUseEffect } from "./components/hooks/useEffect";
+// import { ReactUseEffect } from "./components/hooks/useEffect";
+import { Challenge } from "./components/hooks/useEffect/EffectChallenge";
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
 
@@ -44,7 +45,8 @@ const App = () => {
     {/* <RegistrationFormReact /> */}
     {/* <LoginForm /> */}
     {/* <ContactForm /> */}
-    <ReactUseEffect />
+    {/* <ReactUseEffect /> */}
+    <Challenge />
     </section>
   ); 
 };
