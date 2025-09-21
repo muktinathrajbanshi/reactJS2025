@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./index.css";
 
 export const Challenge = () => {
 
     const [count, setCount] = useState(0);
+    const [name, setName] = useState("");
+
+
+    useEffect(() => {
+        console.log(name);
+    }, [name]);
+
+    
+    
 
   return (
     <>
@@ -15,10 +24,12 @@ export const Challenge = () => {
         </p>
         <button onClick={() => setCount(count + 1)}>Increment</button>
         <p>
-        Name: <span> </span>
+        Name: <span> {name} </span>
         </p>
         <input 
         type="text" 
+        value={name}
+        onChange={(event) => setName(event.target.value)}
         />
         </div>
       </div>
