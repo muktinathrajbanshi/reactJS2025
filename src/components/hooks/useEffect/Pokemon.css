@@ -16,7 +16,7 @@
 
 .effect-container {
   width: 20rem;
-  height: 39vh;
+  height: 50vh;
   margin-top: 1rem;
   box-shadow: 0 0 28px rgba(255, 255, 255, 0.1);
   background-color: #fff;
@@ -34,7 +34,7 @@
 }
 
 .effect-container:hover {
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 38px rgba(255, 255, 255, 0.8);
   transform: scale(1.2);
   -webkit-transform: scale(1.01);
   -moz-transform: scale(1.2);
@@ -50,11 +50,18 @@
   -o-border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
 }
 
+figure .pokemon-image {
+  margin-top: 1rem;
+}
+
 h1 {
   font-size: 3rem;
 }
 
 .effect-container .pokemon-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   list-style: none;
-  background-color: red;
 }
