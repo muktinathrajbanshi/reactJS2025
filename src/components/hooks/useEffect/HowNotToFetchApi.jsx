@@ -22,10 +22,11 @@ export const HowNotToFetchApi = () => {
     
   return (
     
-      <section className="container effect-container">
+      <section className="container">
        <header>
         <h1>Lets Catch Pokemon</h1>
        </header>
+       <div className="effect-container">
        <ul className="card-demo">
         <li className="pokemon-card">
             <figure>
@@ -33,6 +34,7 @@ export const HowNotToFetchApi = () => {
             </figure>
         </li>
        </ul>
+       </div>
       </section> 
   );
 };

@@ -8,6 +8,53 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  padding-top: 1rem;
+  flex-direction: column;
   align-items: center;
+  background-color: #ecf0f1;
+}
+
+.effect-container {
+  width: 20rem;
+  height: 39vh;
+  margin-top: 1rem;
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.1);
+  background-color: #fff;
+}
+
+.card-demo {
+  width: 20rem;
+  height: 17vh;
+  border-radius: 56% 44% 44% 56% / 65% 66% 34% 35%;
+  -webkit-border-radius: 56% 44% 44% 56% / 65% 66% 34% 35%;
+  -moz-border-radius: 56% 44% 44% 56% / 65% 66% 34% 35%;
+  -ms-border-radius: 56% 44% 44% 56% / 65% 66% 34% 35%;
+  -o-border-radius: 56% 44% 44% 56% / 65% 66% 34% 35%;
+  background-color: #ecf0f1;
+}
+
+.effect-container:hover {
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.card-demo:hover {
+  border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
+  -webkit-border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
+  -moz-border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
+  -ms-border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
+  -o-border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.effect-container .pokemon-card {
+  list-style: none;
+  background-color: red;
 }
