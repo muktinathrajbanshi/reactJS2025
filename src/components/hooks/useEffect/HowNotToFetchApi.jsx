@@ -1,28 +1,38 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import "./Pokemon.css";
 
 export const HowNotToFetchApi = () => {
 
-    const [apiData, setApiData] = useState([]);
+    const [apiData, setApiData] = useState(null);
 
-        fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((res) => res.json())
-    .then((data) =>{
-            // setApiData(data);
-        })
-    .catch((error) => console.log(error));
-    
-    
+    const API = "https://pokeapi.co/api/v2/pokemon/pikachu";
+
+    const fetchPokemon = () => {
+        fetch("API")
+        .then((res) => res.json())
+        .then((data) =>{
+                setApiData(data);
+            })
+        .catch((error) => console.log(error));
+    };
+
+    useEffect(() => {
+        fetchPokemon();
+    }, []);
     
   return (
     
-      <div className="container effect-container">
-        <ul>data:
-        {apiData.map((curData) => {
-            return <li key={curData.id}> {curData.title} </li>
-        })}
-        </ul>
-      </div>
-    
+      <section className="container effect-container">
+       <header>
+        <h1>Lets Catch Pokemon</h1>
+       </header>
+       <ul className="card-demo">
+        <li className="pokemon-card">
+            <figure>
+
+            </figure>
+        </li>
+       </ul>
+      </section> 
   );
 };
