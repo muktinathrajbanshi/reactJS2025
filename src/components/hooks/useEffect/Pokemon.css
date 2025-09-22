@@ -50,6 +50,18 @@
   -o-border-radius: 56% 44% 46% 54% / 1% 0% 100% 99%;
 }
 
+.grid-three-cols {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemon-info {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 figure .pokemon-image {
   margin-top: 1rem;
 }

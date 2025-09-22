@@ -5,9 +5,9 @@ export const HowNotToFetchApi = () => {
 
     const [pokemon, setPokemon] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState("");
+    const [error, setError] = useState(null);
 
-    const API = "https://pokeapi.co/api/v2/pokemons/pikachu";
+    const API = "https://pokeapi.co/api/v2/pokemon/pikachu";
 
     const fetchPokemon = () => {
         fetch(API)
@@ -60,6 +60,17 @@ export const HowNotToFetchApi = () => {
             />
             </figure>
             <h1>{pokemon.name}</h1>
+            <div className="grid-three-cols">
+                <p className="pokemon-info">
+                    Height: <span>{pokemon.height}</span>
+                </p>
+                <p className="pokemon-info">
+                    Weight: <span>{pokemon.weight}</span>
+                </p>
+                <p className="pokemon-info">
+                    Speed: <span>{pokemon.stats[5].base_stat}</span>
+                </p>
+            </div>
         </li>
        </ul>
        </div>
