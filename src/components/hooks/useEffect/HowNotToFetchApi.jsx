@@ -3,7 +3,7 @@ import "./Pokemon.css";
 
 export const HowNotToFetchApi = () => {
 
-    const [apiData, setApiData] = useState(null);
+    const [pokemon, setPokemon] = useState(null);
 
     const API = "https://pokeapi.co/api/v2/pokemon/pikachu";
 
@@ -11,7 +11,7 @@ export const HowNotToFetchApi = () => {
         fetch(API)
         .then((res) => res.json())
         .then((data) =>{
-            setApiData(data);
+            setPokemon(data);
             })
         .catch((error) => console.log(error));
     };
@@ -20,9 +20,15 @@ export const HowNotToFetchApi = () => {
         fetchPokemon();
     }, []);
 
-    console.log(apiData);
+    console.log(pokemon);
 
-if(apiData) {
+    if(!pokemon) return(
+        <div>
+        <h1>Loading....</h1>
+        </div>
+    );
+
+// if(pokemon) {
   return (
       <section className="container">
        <header>
@@ -33,17 +39,17 @@ if(apiData) {
         <li className="pokemon-card">
             <figure>
             <img
-            src={apiData.sprites.other.dream_world.front_default} 
-            alt={apiData.name} 
+            src={pokemon.sprites.other.dream_world.front_default} 
+            alt={pokemon.name} 
             className="pokemon-image"
             />
             </figure>
-            <h1>{apiData.name}</h1>
+            <h1>{pokemon.name}</h1>
         </li>
        </ul>
        </div>
       </section> 
   );
-  }
+//   }
 };
 
