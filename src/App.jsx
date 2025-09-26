@@ -18,7 +18,8 @@
 
 // import { ReactUseEffect } from "./components/hooks/useEffect";
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp";
-import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
+// import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
+import { UseRef } from "./components/hooks/useRefs";
 // import { Challenge } from "./components/hooks/useEffect/EffectChallenge";
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
@@ -50,7 +51,8 @@ const App = () => {
     {/* <ReactUseEffect /> */}
     {/* <Challenge /> */}
     {/* <CleanUp /> */}
-    <HowNotToFetchApi />
+    {/* <HowNotToFetchApi /> */}
+    <UseRef />
     </section>
   ); 
 };
