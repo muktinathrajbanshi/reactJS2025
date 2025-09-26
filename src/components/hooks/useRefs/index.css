@@ -28,6 +28,7 @@ p,
 span {
   font-size: 1.6rem;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -43,8 +44,16 @@ span {
   -o-border-radius: 0.5rem;
 }
 
+.container .manage-label {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
 .form-design {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 4rem 0;
   gap: 0.5rem;
   flex-direction: column;
