@@ -16,7 +16,7 @@ export const ForwardRefs = () => {
         <div className="container">
             <form onSubmit={handleFormSubmit} className="form-design">
             <BeforeReact19Input label = "username" ref={username} />
-            <BeforeReact19Input label = "username" ref={password} />
+            <BeforeReact19Input label = "password" ref={password} />
             <button>Submit</button>
             </form>
       </div>
@@ -28,7 +28,7 @@ const BeforeReact19Input = forwardRef((props, ref) => {
     const id = useId();
 
     return (
-        <div>
+        <div className="manage-label">
             <label htmlFor={id}>{props.label}</label>
             <input type="text" ref={ref} />
         </div>
