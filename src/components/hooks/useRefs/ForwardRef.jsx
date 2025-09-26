@@ -1,4 +1,4 @@
-import { forwardRef, useId, useRef } from 'react';
+import { useId, useRef } from 'react';
 import "./index.css";
 
 export const ForwardRefs = () => {
@@ -42,13 +42,13 @@ export const ForwardRefs = () => {
 
 // Creating AeforeReact19Input 
 
-const BeforeReact19Input = (props) => {
+const BeforeReact19Input = ({label, ref}) => {
     const id = useId();
 
     return (
         <div className="manage-label">
-            <label htmlFor={id}>{props.label}</label>
-            <input type="text" ref={props.ref} />
+            <label htmlFor={id}>{label}</label>
+            <input type="text" ref={ref} />
         </div>
     );
 };
