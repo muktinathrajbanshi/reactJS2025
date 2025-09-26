@@ -4,7 +4,15 @@ import "./index.css";
 export const UseRef = () => {
   return (
     <>
-      <h1>Hello use ref</h1>
+    <div className="container">
+      <form>
+        <input type="text" id="username" />
+        <br />
+        <input type="text" id="password" />
+        <br />
+        <button>Submit</button>
+      </form>
+      </div>
     </>
   );
 };
