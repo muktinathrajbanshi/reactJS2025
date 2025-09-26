@@ -5,12 +5,14 @@ export const UseRef = () => {
   return (
     <>
     <div className="container">
-      <form>
+      <form className="form-design">
+        <label htmlFor="Username">Username</label>
         <input type="text" id="username" />
-        <br />
+        <label htmlFor="Password">Password</label>
         <input type="text" id="password" />
-        <br />
+        <div className="button-control">
         <button>Submit</button>
+        </div>
       </form>
       </div>
     </>
