@@ -9,6 +9,8 @@ export const ForwardRefs = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
+        console.log(username.current.value, password.current.value);
+        
     };
 
   return (
@@ -24,13 +26,29 @@ export const ForwardRefs = () => {
   );
 };
 
-const BeforeReact19Input = forwardRef((props, ref) => {
+// Creating BeforeReact19Input 
+
+// const BeforeReact19Input = forwardRef((props, ref) => {
+//     const id = useId();
+
+//     return (
+//         <div className="manage-label">
+//             <label htmlFor={id}>{props.label}</label>
+//             <input type="text" ref={ref} />
+//         </div>
+//     );
+// });
+
+
+// Creating AeforeReact19Input 
+
+const BeforeReact19Input = (props) => {
     const id = useId();
 
     return (
         <div className="manage-label">
             <label htmlFor={id}>{props.label}</label>
-            <input type="text" ref={ref} />
+            <input type="text" ref={props.ref} />
         </div>
     );
-});
+};
