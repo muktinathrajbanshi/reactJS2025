@@ -5,6 +5,7 @@ export const UseId = () => {
 
     const usernameId = useId();
     const emailId = useId();
+    const passwordId = useId();
 
   return (
     <>
@@ -15,6 +16,9 @@ export const UseId = () => {
         </div>
             <label htmlFor={usernameId}>Username:</label>
             <input type="text" id={usernameId} name="name" />
+
+            <label htmlFor={passwordId}>Password:</label>
+            <input type="password" id={passwordId} name="password" />
 
             <label htmlFor={emailId}>Email:</label>
             <input type="email" id={emailId} name="email" />
