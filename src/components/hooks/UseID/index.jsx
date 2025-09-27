@@ -35,10 +35,20 @@ export const UseId = () => {
 
     const id = useId();
 
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        console.log("Username:", formData.get("name"));
+        console.log("Password:", formData.get("password"));
+        console.log("Email:", formData.get("email"));
+    };
+
   return (
     <>
     <div className="container">
-      <form className="form-data-management">
+      <form onSubmit={handleFormSubmit} className="form-data-management">
         <div className="heading">
             <h1>UseId</h1>
         </div>
