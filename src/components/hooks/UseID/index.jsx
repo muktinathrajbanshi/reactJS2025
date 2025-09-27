@@ -1,19 +1,25 @@
-import React from 'react';
+import { useId } from 'react';
+import "./index.css";
 
 export const UseId = () => {
+
+    useId();
+
   return (
     <>
+    <div className="container">
       <form>
         <div>
-            <label>Username:</label>
-            <input type="text" name="name" />
+            <label htmlFor="username">Username:</label>
+            <input type="text" id="username" name="name" />
         </div>
         <div>
-            <label>Email:</label>
-            <input type="email" name="email" />
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" />
         </div>
         <button type="submit">Submit</button>
       </form>
+      </div>
     </>
   );
 };
