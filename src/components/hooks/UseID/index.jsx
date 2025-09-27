@@ -9,11 +9,16 @@ export const UseId = () => {
     <>
     <div className="container">
       <form className="form-data-management">
+        <div className="heading">
+            <h1>UseId</h1>
+        </div>
             <label htmlFor="username">Username:</label>
             <input type="text" id="username" name="name" />
             <label htmlFor="email">Email:</label>
             <input type="email" id="email" name="email" />
-        <button type="submit">Submit</button>
+        <div className="btn">
+            <button type="submit">Submit</button>
+        </div>
       </form>
       </div>
     </>
