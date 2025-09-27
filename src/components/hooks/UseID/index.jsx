@@ -3,7 +3,8 @@ import "./index.css";
 
 export const UseId = () => {
 
-    useId();
+    const usernameId = useId();
+    const emailId = useId();
 
   return (
     <>
@@ -12,10 +13,11 @@ export const UseId = () => {
         <div className="heading">
             <h1>UseId</h1>
         </div>
-            <label htmlFor="username">Username:</label>
-            <input type="text" id="username" name="name" />
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" />
+            <label htmlFor={usernameId}>Username:</label>
+            <input type="text" id={usernameId} name="name" />
+
+            <label htmlFor={emailId}>Email:</label>
+            <input type="email" id={emailId} name="email" />
         <div className="btn">
             <button type="submit">Submit</button>
         </div>
