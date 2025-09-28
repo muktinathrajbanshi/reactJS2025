@@ -20,7 +20,8 @@
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp";
 // import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
 // import { UseRef } from "./components/hooks/useRefs";
-import { UseId } from "./components/hooks/UseID";
+// import { UseId } from "./components/hooks/UseID";
+import { PropDrilling } from "./components/PropDrilling";
 // import { ForwardRefs } from "./components/hooks/useRefs/ForwardRef";
 // import { Challenge } from "./components/hooks/useEffect/EffectChallenge";
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
@@ -56,7 +57,8 @@ const App = () => {
     {/* <HowNotToFetchApi /> */}
     {/* <UseRef /> */}
     {/* <ForwardRefs /> */}
-    <UseId />
+    {/* <UseId /> */}
+    <PropDrilling />
     </section>
   ); 
 };
