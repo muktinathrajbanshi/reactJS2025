@@ -21,6 +21,8 @@
 // import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
 // import { UseRef } from "./components/hooks/useRefs";
 // import { UseId } from "./components/hooks/UseID";
+import { BioProvider } from "./components/hooks/ContextAPI";
+import { About } from "./components/hooks/ContextAPI/About";
 import { Home } from "./components/hooks/ContextAPI/Home";
 // import { PropDrilling } from "./components/PropDrilling";
 // import { ForwardRefs } from "./components/hooks/useRefs/ForwardRef";
@@ -60,7 +62,10 @@ const App = () => {
     {/* <ForwardRefs /> */}
     {/* <UseId /> */}
     {/* <PropDrilling /> */}
-    <Home />
+    <BioProvider>
+      <Home />
+      <About />
+    </BioProvider>
     </section>
   ); 
 };
