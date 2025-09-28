@@ -21,7 +21,8 @@
 // import { HowNotToFetchApi } from "./components/hooks/useEffect/HowNotToFetchApi";
 // import { UseRef } from "./components/hooks/useRefs";
 // import { UseId } from "./components/hooks/UseID";
-import { PropDrilling } from "./components/PropDrilling";
+import { BioProvider } from "./components/hooks/ContextAPI";
+// import { PropDrilling } from "./components/PropDrilling";
 // import { ForwardRefs } from "./components/hooks/useRefs/ForwardRef";
 // import { Challenge } from "./components/hooks/useEffect/EffectChallenge";
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
@@ -58,7 +59,8 @@ const App = () => {
     {/* <UseRef /> */}
     {/* <ForwardRefs /> */}
     {/* <UseId /> */}
-    <PropDrilling />
+    {/* <PropDrilling /> */}
+    <BioProvider />
     </section>
   ); 
 };
