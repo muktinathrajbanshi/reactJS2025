@@ -24,6 +24,7 @@
 import { BioProvider } from "./components/hooks/ContextAPI";
 import { About } from "./components/hooks/ContextAPI/About";
 import { Home } from "./components/hooks/ContextAPI/Home";
+import { Services } from "./components/Services";
 // import { PropDrilling } from "./components/PropDrilling";
 // import { ForwardRefs } from "./components/hooks/useRefs/ForwardRef";
 // import { Challenge } from "./components/hooks/useEffect/EffectChallenge";
@@ -34,7 +35,7 @@ import { Home } from "./components/hooks/ContextAPI/Home";
 
 const App = () => {
   return (
-    <section className="container">
+    <>
     {/* <h1 className="card-heading">List of Best Netflix Series</h1>
     <NetflixSeries />  */}
     {/* <EventHandling /> */}
@@ -66,7 +67,8 @@ const App = () => {
       <Home />
       <About />
     </BioProvider>
-    </section>
+    <Services />
+    </>
   ); 
 };
 
