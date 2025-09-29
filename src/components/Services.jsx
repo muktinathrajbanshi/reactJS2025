@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { BioContext } from "./hooks/ContextAPI";
+
+import { useBioContext } from "./hooks/ContextAPI";
 
 export const Services = () => {
 
-    const {myName, myAge} = useContext(BioContext);
+    const {myName, myAge} = useBioContext();
 
     return (
         <section>
