@@ -1,5 +1,5 @@
-
 import { useBioContext } from "./hooks/ContextAPI";
+import "./contextapi.css";
 
 export const Services = () => {
 
