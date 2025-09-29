@@ -1,4 +1,5 @@
 import { createContext, use, useState } from "react";
+import "./darklight.css";
 
 // const {ThemeContext} from "react";
 
@@ -29,7 +30,7 @@ export const DarkLight = () => {
 
     return (
         <>
-            <div>
+            <div className={`dark-light ${theme}`}>
                 <h1>Dark Light Mode Website</h1>
                 <p>Hello!! My React v19 Fans 👍</p>
                 <button onClick={handleToggleTheme}>
