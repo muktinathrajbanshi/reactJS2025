@@ -66,8 +66,8 @@ const App = () => {
     <BioProvider>
       <Home />
       <About />
+      <Services />
     </BioProvider>
-    <Services />
     </>
   ); 
 };
