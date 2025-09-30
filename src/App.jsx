@@ -24,7 +24,8 @@
 // import { BioProvider } from "./components/hooks/ContextAPI";
 // import { About } from "./components/hooks/ContextAPI/About";
 // import { DarkLight, ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
-import { ReducerComp } from "./components/hooks/useReducer";
+import { ReactMemo } from "./components/hooks/Memo/ReactMemo";
+// import { ReducerComp } from "./components/hooks/useReducer";
 // import { Home } from "./components/hooks/ContextAPI/Home";
 // import { Services } from "./components/Services";
 // import { PropDrilling } from "./components/PropDrilling";
@@ -68,7 +69,8 @@ const App = () => {
     {/* <ThemeProvider>
       <DarkLight />
     </ThemeProvider> */}
-    <ReducerComp />
+    {/* <ReducerComp /> */}
+    <ReactMemo />
     </>
   ); 
 };
