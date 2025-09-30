@@ -6,6 +6,8 @@ export const ReducerComp = () => {
 
     const initialState = {
         count: 0,
+        inc: 2,
+        dec: 2,
     };
 
     const reducer = (state, action) => {
@@ -25,15 +27,25 @@ export const ReducerComp = () => {
 
         switch (action.type) {
             case "INCREMENT":
-                return {count: state.count + 1};
+                return {
+                    ... state,
+                    count: state.count + 1,
+                };
 
-            // case "DECREMENT":
-            //     return state - 1;
+            case "DECREMENT":
+                return {
+                    ... state,
+                    count: state.count - 1,
+                };
 
-            //  case "RESET":
-            //     return (state = 0);
-            // default:
-            //     return state;
+             case "RESET":
+                return {
+                    ... state,
+                    count:0,
+                };
+
+             default:
+                return state;
         }
 
 
