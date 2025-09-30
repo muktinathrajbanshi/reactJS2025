@@ -5,22 +5,29 @@ import "./index.css";
 export const ReducerComp = () => {
 
     const reducer = (state, action) => {
+        console.log(state, action);
 
+        if(action.type === "INCREMENT") {
+            return state + 1;
+        }
+        
+        if(action.type === "DECREMENT") {
+            return state - 1;
+        }
     };
 
     // const [count, setCount] = useState(0);
     const [count, dispatch] = useReducer(reducer, 0);
 
-        console.log(useReducer);
-        
+
 
     return (
         <>
             <div className="container">
                 <h1>{count}</h1>
-                <button>Increment</button>
-                <button>Decrement</button>
+                <button onClick={() => dispatch({type:"INCREMENT"})}>Increment</button>
+                <button onClick={() => dispatch({type:"DECREMENT"})}>Decrement</button>
             </div>
         </>
-    )
+    );
 };
