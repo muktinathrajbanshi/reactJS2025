@@ -1,3 +1,26 @@
+import { useReducer } from "react";
+import "./index.css";
+
+
 export const ReducerComp = () => {
-    return <h1>Hello useReducer Hook</h1>
+
+    const reducer = (state, action) => {
+
+    };
+
+    // const [count, setCount] = useState(0);
+    const [count, dispatch] = useReducer(reducer, 0);
+
+        console.log(useReducer);
+        
+
+    return (
+        <>
+            <div className="container">
+                <h1>{count}</h1>
+                <button>Increment</button>
+                <button>Decrement</button>
+            </div>
+        </>
+    )
 };
