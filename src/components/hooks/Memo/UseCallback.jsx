@@ -24,13 +24,12 @@ export const UseCallback = () => {
     }, []);
 
     // Memoize the decrement function
-    const decrement = () => {
-        // if(count>0) {
-        //     setCount((prevCount) => prevCount -1)
-        // }
-        setCount((prevCount) => prevCount -1)
+    // const decrement = () => setCount((prevCount) => prevCount -1); 
 
-    };
+     const decrement = useCallback(() => {
+        console.log("decrement inside");
+        setCount((prevCount) => prevCount - 1);
+    }, []);
 
   return (
     <>
