@@ -39,4 +39,5 @@ button {
   background-color: #3498db;
   font-size: 1.3rem;
   letter-spacing: 1px;
+  cursor: pointer;
 }
