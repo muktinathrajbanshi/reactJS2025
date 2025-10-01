@@ -35,8 +35,16 @@ button {
   outline: none;
   padding: 1rem;
   width: 20rem;
-  background-color: #3498db;
+  /* background-color: #3498db; */
   font-size: 1.3rem;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.red {
+  background-color: #e74c3c;
 }
