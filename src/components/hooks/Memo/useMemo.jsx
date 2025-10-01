@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import "./memo.css";
 
 const ExpensiveComponent = () => {
@@ -11,10 +11,12 @@ const ExpensiveComponent = () => {
         return i; 
     };
 
-    const total = sum();
+    const total = useMemo(() => sum(), []);
+
+    // const total = sum();
 
     return <p> sum: {total} </p>;
-}
+};
 
 export const MemoParentComponent = () => {
 
